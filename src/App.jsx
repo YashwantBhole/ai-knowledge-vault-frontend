@@ -40,7 +40,7 @@ export default function App() {
     try {
       setIsLoading(true);
       setProcessingMessage("Creating account...");
-      await axios.post(`${API}/signup`, { name, email, password });
+      await axios.post(`${API}/api/signup`, { name, email, password });
       localStorage.setItem("name", name);
       showToast("Signup successful, please login");
       setMode("login");
@@ -56,7 +56,7 @@ export default function App() {
     try {
       setIsLoading(true);
       setProcessingMessage("Logging in...");
-      const res = await axios.post(`${API}/login`, { email, password });
+      const res = await axios.post(`${API}/api/login`, { email, password });
       setToken(res.data.token);
       localStorage.setItem("token", res.data.token);
       showToast("Logged in");
@@ -81,7 +81,7 @@ export default function App() {
   // --------------------------------------------------
   const fetchFiles = async () => {
     try {
-      const res = await axios.get(`${API}/files`, { headers: apiHeaders });
+      const res = await axios.get(`${API}/api/files`, { headers: apiHeaders });
       setFiles(res.data || []);
     } catch(e) {
       if(e.response?.status === 401){
@@ -101,7 +101,7 @@ export default function App() {
     try {
       setIsLoading(true);
       setProcessingMessage("Uploading file...");
-      await axios.post(`${API}/upload`, formData, { headers: apiHeaders });
+      await axios.post(`${API}/api/upload`, formData, { headers: apiHeaders });
       showToast("Upload complete");
       setFile(null);
       await fetchFiles();
@@ -118,7 +118,7 @@ export default function App() {
       setIsLoading(true);
       setProcessingMessage("Preparing file...");
 
-      const res = await axios.get(`${API}/files/${id}`, { headers: apiHeaders });
+      const res = await axios.get(`${API}/api/files/${id}`, { headers: apiHeaders });
 
       if (res?.data?.url) {
         window.open(res.data.url, "_blank");
@@ -139,7 +139,7 @@ export default function App() {
     try {
       setIsLoading(true);
       setProcessingMessage("Deleting file...");
-      await axios.delete(`${API}/files/${id}`, { headers: apiHeaders });
+      await axios.delete(`${API}/api/files/${id}`, { headers: apiHeaders });
       showToast("Delete complete");
       await fetchFiles();
       if (id === activeFileId) setActiveFileId("");
@@ -155,7 +155,7 @@ export default function App() {
     try {
       setIsLoading(true);
       setProcessingMessage(`${doneMessage} in progress...`);
-      await axios.post(`${API}/${endpoint}/${id}`, {}, { headers: apiHeaders });
+      await axios.post(`${API}/api/${endpoint}/${id}`, {}, { headers: apiHeaders });
       showToast(`${doneMessage} complete`);
     } catch {
       showToast(`${doneMessage} failed`, "error");
@@ -176,7 +176,7 @@ export default function App() {
       setIsLoading(true);
       setProcessingMessage("Asking AI...");
       const res = await axios.post(
-        `${API}/ask-docs`,
+        `${API}/api/ask-docs`,
         { question, fileId: activeFileId },
         { headers: apiHeaders }
       );
