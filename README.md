@@ -201,7 +201,7 @@ npm run dev
 
 ---
 
-## ⭐ Support
+## ⭐ Feedback
 
 If you found this project helpful, please ⭐ **star** the repository — it encourages me a lot!
 
