@@ -172,21 +172,23 @@ npm run dev
 
 ### **Yashwant Bhole**
 
-<a href="https://github.com/YashwantBhole" target="_blank">
-  <img src="https://skillicons.dev/icons?i=github" width="45" />
+<br/>
+
+<a href="https://github.com/YashwantBhole" target="_blank" style="margin: 0 10px;">
+  <img src="https://skillicons.dev/icons?i=github" width="55" height="55" />
 </a>
 
-<a href="https://www.linkedin.com/in/yashwantbhole" target="_blank">
-  <img src="https://skillicons.dev/icons?i=linkedin" width="45" />
+<a href="https://www.linkedin.com/in/yashwantbhole" target="_blank" style="margin: 0 10px;">
+  <img src="https://skillicons.dev/icons?i=linkedin" width="55" height="55" />
 </a>
 
-<a href="mailto:yashwantbhole2004@gmail.com" target="_blank">
+<a href="mailto:yashwantbhole2004@gmail.com" target="_blank" style="margin: 0 10px;">
   <img src="https://img.shields.io/badge/Email-Contact%20Me-red?style=for-the-badge" />
 </a>
 
-<br /><br />
+<br/><br/>
 
-💼 *Full Stack Developer • MERN • Java • Spring Boot*  
+💼 *Full Stack Developer — MERN • Java • Spring Boot*  
 🌟 *Building AI-powered systems with clean architecture and strong UI/UX.*
 
 </div>
