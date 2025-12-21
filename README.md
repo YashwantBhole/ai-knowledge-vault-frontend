@@ -1,4 +1,4 @@
-<div align="center">
+<div>
   <img src="./public/screenshots/ai-banner.png" alt="AI Knowledge Vault Banner" width="100%" height="350" />
 
 # 📚 AI Knowledge Vault — Hybrid RAG System
