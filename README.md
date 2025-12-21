@@ -194,8 +194,6 @@ npm run dev
   </a>
 </p>
 
-<br/><br/>
-
 💼 *Full Stack Developer — MERN • Java • Spring Boot*  
 🌟 *Building AI-powered systems with clean architecture and strong UI/UX.*
 
