@@ -3,169 +3,166 @@
 
 # 📚 AI Knowledge Vault — Hybrid RAG System
 
-> A **Hybrid Retrieval-Augmented Generation (RAG) Knowledge Vault** that lets users upload documents and images, extract text automatically, generate semantic embeddings, and ask intelligent questions grounded in their own data.
+> A **Hybrid Retrieval-Augmented Generation (RAG) Knowledge Vault** that lets users upload documents & images, extract text, generate embeddings, and ask intelligent questions grounded in their own data.
 
-This project demonstrates **real-world AI system design**, combining MERN, OCR, vector search, and LLMs into a clean, scalable pipeline.
+**A real-world AI system design** built using MERN, OCR, vector search, and LLMs in a clean, scalable pipeline.
+
+</div>
 
 ---
 
 ## 🚀 Features
 
-- 🔐 **Secure Authentication** — Files and data are isolated per user
-- 📄 **Multi-format Support** — PDF, DOCX, TXT, PNG, JPG
-- 🧠 **Hybrid RAG Architecture**
-  - Document-grounded answers
-  - Optional fallback to general AI knowledge
-- 🔍 **Semantic Search** — Vector-based similarity search using embeddings
-- 🖼️ **Image OCR Support** — Extract text from scanned documents and images
-- ✂️ **Intelligent Chunking** — Overlapping chunks preserve context
-- 🤖 **AI Question Answering** — Answers generated using retrieved document context
-- ⚡ **Fast Retrieval** — Optimized chunking + embeddings
-- 🧩 **Auditable Results** — Answers tied back to document chunks
+- 🔐 **Secure Authentication** — Files & data isolated per user  
+- 📄 **Multi-format Support** — PDF, DOCX, TXT, PNG, JPG  
+- 🧠 **Hybrid RAG Architecture**  
+  - Document-grounded answers  
+  - Optional fallback to general AI  
+- 🔍 **Semantic Search** — Vector similarity search  
+- 🖼️ **Image OCR Support** — Extract text from images & scanned PDFs  
+- ✂️ **Intelligent Chunking** — Overlapping chunks retain context  
+- 🤖 **AI Question Answering** — Grounded LLM responses  
+- ⚡ **Fast Retrieval Pipeline**  
+- 🧩 **Auditable Results** — Linked back to source chunks  
 
 ---
 
 ## 🖼️ Demo & Screenshots
 
-## 🖥️ Demo Screenshots
+Below are the key screens demonstrating the workflow.
 
-### 🔐 Login 
-<img src="./public/screenshots/login.png" width="500"/>
+### 🔐 Login  
+<img src="./public/screenshots/login.png" width="600"/>
 
 ### 📁 Upload Section  
-<img src="./public/screenshots/upload.png" width="500"/>
+<img src="./public/screenshots/upload.png" width="600"/>
 
-### ⚙️ Processing Pipeline (Extract → Chunk → Embed)
-<img src="./public/screenshots/pipeline.png" width="500"/>
+### ⚙️ Processing Pipeline (Extract → Chunk → Embed)  
+<img src="./public/screenshots/pipeline.png" width="600"/>
 
-### 🤖 Ask AI Interface
-<img src="./public/screenshots/ask-ai.png" width="500"/>
+### 🤖 Ask AI Interface  
+<img src="./public/screenshots/ask-ai.png" width="600"/>
 
-### 🧠 AI Structured Response
-<img src="./public/screenshots/answer.png" width="500"/>
+### 🧠 AI Structured Response  
+<img src="./public/screenshots/answer.png" width="600"/>
 
 ---
 
 ## 🎥 Demo Video
 
 [![Watch the demo](./public/screenshots/ai-thumbnail.png)](https://github.com/YashwantBhole/ai-knowledge-vault-frontend/releases/download/project-demo-video/Screen.Recording.2025-12-21.123112.mp4)
-> Click the thumbnail to download and watch the demo video.
+
+> 📥 Click the thumbnail to download and watch the full demo.
 
 ---
 
-🏗️ System Architecture
+## 🏗️ System Architecture
+
+```
 Upload File / Image
         ↓
-Text Extraction (PDF Parse / OCR)
+Text Extraction (PDF Parser / OCR)
         ↓
-Chunking (with overlap)
+Chunking (with contextual overlap)
         ↓
 Embeddings (Gemini)
         ↓
 Vector Search (Cosine Similarity)
         ↓
-LLM Answer (Grounded Context)
+LLM Answer (Grounded in retrieved context)
+```
 
+---
 
-🧠 What is Hybrid RAG?
+## 🧠 What is Hybrid RAG?
 
-This project uses Hybrid Retrieval-Augmented Generation:
+Hybrid RAG blends:
 
-📌 Answers are primarily grounded in user-uploaded documents
+- 📑 **Document-grounded answers**  
+- 🧠 **AI general knowledge fallback**
 
-🧠 If documents are incomplete, the AI may supplement with general knowledge
+This ensures:
 
-✅ Reduces hallucinations while remaining practical for learning use cases
+✔ Reduced hallucinations  
+✔ High accuracy  
+✔ Great real-world usability  
 
-🛠️ Tech Stack
-Frontend
+---
 
-⚛️ React
+## 🛠️ Tech Stack
 
-🎨 Tailwind CSS
+### **Frontend**
+- ⚛️ React  
+- 🎨 Tailwind CSS  
 
-Backend
+### **Backend**
+- 🟢 Node.js  
+- 🚂 Express.js  
+- 🍃 MongoDB (Mongoose)  
 
-🟢 Node.js
+### **AI / ML**
+- 🧠 Google Gemini (Embeddings + LLM)  
+- 📐 Cosine Similarity (Vector Search)  
 
-🚂 Express.js
+### **File Processing**
+- 📄 pdf-parse  
+- 🖼️ Tesseract.js (OCR)  
+- ☁️ Backblaze B2 (S3-compatible storage)  
 
-🍃 MongoDB + Mongoose
+### **Auth**
+- 🔑 JWT Authentication  
+- 🔒 User-isolated access  
 
-AI / ML
+---
 
-🧠 Google Gemini (Embeddings + Generation)
+## 📡 API Workflow
 
-📐 Cosine Similarity (Vector Search)
+| Step | Endpoint | Description |
+|------|----------|-------------|
+| 1️⃣ | `POST /api/process-file/:id` | Extract text |
+| 2️⃣ | `POST /api/create-chunks/:id` | Create semantic chunks |
+| 3️⃣ | `POST /api/create-embeddings/:id` | Generate embeddings |
+| 4️⃣ | `POST /api/search-docs` | Vector similarity search |
+| 5️⃣ | `POST /api/ask-docs` | Ask questions via RAG |
 
-File & Data Processing
+---
 
-📄 pdf-parse (PDF text extraction)
+## 🧪 Example Use Cases
 
-🖼️ Tesseract.js (OCR for images)
+- 📑 Contract question answering  
+- 📚 Coding interview preparation  
+- 🔬 Research paper summarization  
+- 💬 Internal support knowledge base  
+- 🧠 Personal notes assistant  
+- 🖼️ Query scanned notes / images via OCR  
 
-☁️ AWS SDK (S3-compatible storage — Backblaze B2)
+---
 
-Auth & Security
+## ▶️ Run Locally
 
-🔑 JWT Authentication
-
-🔒 User-isolated data access
-
-📡 API Workflow
-1️⃣ Extract Text
-POST /api/process-file/:id
-
-2️⃣ Create Chunks
-POST /api/create-chunks/:id
-
-3️⃣ Generate Embeddings
-POST /api/create-embeddings/:id
-
-4️⃣ Semantic Search
-POST /api/search-docs
-
-5️⃣ Ask Questions (RAG)
-POST /api/ask-docs
-
-🧪 Example Use Cases
-
-📑 Contract question answering
-
-📚 Coding interview preparation
-
-🔬 Research paper summarization
-
-💬 Internal support knowledge base
-
-🧠 Personal notes assistant
-
-🖼️ Query scanned notes or images using OCR
-
-
-▶️ Run Locally
-# Backend
+### **Backend**
+```bash
 cd backend
 npm install
 npm run dev
+```
 
-# Frontend
+### **Frontend**
+```bash
 cd frontend
 npm install
 npm run dev
+```
 
+---
 
-🔮 Future Improvements
+## 🔮 Future Improvements
 
-Background job queue for embedding generation
-
-Hybrid keyword + vector search
-
-Source highlighting per answer
-
-Streaming AI responses
-
-Multi-file context aggregation
+- 🏗 Background job queue for embeddings  
+- 🔎 Hybrid keyword + vector search  
+- 🎯 Source highlighting inside answers  
+- ⚡ Streaming responses  
+- 📚 Multi-file context aggregation  
 
 ---
 
@@ -187,7 +184,7 @@ Multi-file context aggregation
   <img src="https://img.shields.io/badge/Email-Contact%20Me-red?style=for-the-badge" />
 </a>
 
-<br />
+<br /><br />
 
 💼 *Full Stack Developer • MERN • Java • Spring Boot*  
 🌟 *Building AI-powered systems with clean architecture and strong UI/UX.*
@@ -195,6 +192,8 @@ Multi-file context aggregation
 </div>
 
 ---
-⭐ Support
 
-If you find this project useful, consider giving it a ⭐ on GitHub — it really helps!
+## ⭐ Support
+
+If you found this project helpful, please ⭐ **star** the repository — it encourages me a lot!
+
