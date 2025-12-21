@@ -26,6 +26,12 @@
 - 🧩 **Auditable Results** — Linked back to source chunks  
 
 ---
+## 🔗 Live Links
+
+- 🌐 Frontend: [Click here](http://rag-ai-engine.netlify.app/)
+- ⚙️ Backend API: [Click here](https://ai-knowledge-vault-backend.onrender.com)
+
+---
 
 ## 🖼️ Demo & Screenshots
 
