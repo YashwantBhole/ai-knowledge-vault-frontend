@@ -50,7 +50,17 @@ Below are the key screens demonstrating the workflow.
 
 ## 🎥 Demo Video
 
-[![Watch the demo](./public/screenshots/ai-thumbnail.png)](https://github.com/YashwantBhole/ai-knowledge-vault-frontend/releases/download/project-demo-video/Screen.Recording.2025-12-21.123112.mp4)
+<div align="center">
+  <a href="https://github.com/YashwantBhole/ai-knowledge-vault-frontend/releases/download/project-demo-video/Screen.Recording.2025-12-21.123112.mp4" target="_blank">
+    <img 
+      src="./public/screenshots/ai-thumbnail.png" 
+      alt="Demo Video" 
+      width="600" 
+      height="350"
+      style="border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);"
+    />
+  </a>
+</div>
 
 > 📥 Click the thumbnail to download and watch the full demo.
 
