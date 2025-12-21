@@ -1,3 +1,6 @@
+<div align="center">
+  <img src="./public/screenshots/ai-banner.png" alt="AI Knowledge Vault Banner" width="100%" />
+
 # 📚 AI Knowledge Vault — Hybrid RAG System
 
 > A **Hybrid Retrieval-Augmented Generation (RAG) Knowledge Vault** that lets users upload documents and images, extract text automatically, generate semantic embeddings, and ask intelligent questions grounded in their own data.
@@ -24,22 +27,31 @@ This project demonstrates **real-world AI system design**, combining MERN, OCR, 
 
 ## 🖼️ Demo & Screenshots
 
-### 📸 Screenshots
-> Paste screenshots here (GitHub will auto-render images)
+## 🖥️ Demo Screenshots
 
-```md
-![Upload Page](screenshots/upload.png)
-![Search Results](screenshots/search.png)
-![Ask Docs Answer](screenshots/ask-docs.png)
+### 🔐 Login 
+<img src="./public/screenshots/login.png" width="500"/>
 
+### 📁 Upload Section  
+<img src="./public/screenshots/upload.png" width="500"/>
 
-📁 Recommended folder: screenshots/
+### ⚙️ Processing Pipeline (Extract → Chunk → Embed)
+<img src="./public/screenshots/pipeline.png" width="500"/>
 
-🎥 Demo Video
+### 🤖 Ask AI Interface
+<img src="./public/screenshots/ask-ai.png" width="500"/>
 
-Paste demo video link (YouTube / Loom / Drive)
+### 🧠 AI Structured Response
+<img src="./public/screenshots/answer.png" width="500"/>
 
-🎬 Demo Video: https://your-demo-video-link-here
+---
+
+## 🎥 Demo Video
+
+[![Watch the demo](./public/screenshots/ai-thumbnail.png)](https://github.com/YashwantBhole/ai-knowledge-vault-frontend/releases/download/project-demo-video/Screen.Recording.2025-12-21.123112.mp4)
+> Click the thumbnail to download and watch the demo video.
+
+---
 
 🏗️ System Architecture
 Upload File / Image
@@ -142,17 +154,6 @@ cd frontend
 npm install
 npm run dev
 
-📌 Why This Is Not a CRUD App
-
-Implements real AI system architecture
-
-Uses vector similarity search, not keyword matching
-
-Handles OCR + unstructured data
-
-Demonstrates production-style pipeline separation
-
-Built with scalability and extensibility in mind
 
 🔮 Future Improvements
 
@@ -166,11 +167,34 @@ Streaming AI responses
 
 Multi-file context aggregation
 
-👨‍💻 Author
+---
 
-Yashwant Bhole
-Designed & Developed with ❤️
+## 👤 Author & Connect With Me
 
+<div align="center">
+
+### **Yashwant Bhole**
+
+<a href="https://github.com/YashwantBhole" target="_blank">
+  <img src="https://skillicons.dev/icons?i=github" width="45" />
+</a>
+
+<a href="https://www.linkedin.com/in/yashwantbhole" target="_blank">
+  <img src="https://skillicons.dev/icons?i=linkedin" width="45" />
+</a>
+
+<a href="mailto:yashwantbhole2004@gmail.com" target="_blank">
+  <img src="https://img.shields.io/badge/Email-Contact%20Me-red?style=for-the-badge" />
+</a>
+
+<br />
+
+💼 *Full Stack Developer • MERN • Java • Spring Boot*  
+🌟 *Building AI-powered systems with clean architecture and strong UI/UX.*
+
+</div>
+
+---
 ⭐ Support
 
 If you find this project useful, consider giving it a ⭐ on GitHub — it really helps!
