@@ -6,7 +6,7 @@
 > A **Hybrid Retrieval-Augmented Generation (RAG) Knowledge Vault** that lets users upload documents & images, extract text, generate embeddings, and ask intelligent questions grounded in their own data.
 
 **A real-world AI system design** built using MERN, OCR, vector search, and LLMs in a clean, scalable pipeline.
-
+ 
 </div>
 
 ---
