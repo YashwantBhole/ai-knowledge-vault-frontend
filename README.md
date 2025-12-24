@@ -10,7 +10,7 @@
 </div>
 
 ---
-👉 [AI Knowledge Vault Backend](https://github.com/YashwantBhole/ai-knowledge-vault-backend)
+👉 [AI Knowledge Vault Backend Repository](https://github.com/YashwantBhole/ai-knowledge-vault-backend)
 ---
 
 ## 🚀 Features
